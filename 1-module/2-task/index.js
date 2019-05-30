@@ -11,9 +11,18 @@ function print (text) {
  * Эту функцию нужно поменять так,
  * чтобы функция sayHello работала корректно
  */
-function isValid (name) {
+function isValid(m) {
+    if (m === '') {
+     return false;
+    } else if (m.length < 4){
+     return false;
+    } else if (m.includes(' ')){
+     return false;
+    } else {
+     return true;
+    }
 }
-
+  
 function sayHello () {
     let userName = prompt('Введите ваше имя');
 
