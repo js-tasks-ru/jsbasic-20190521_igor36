@@ -14,7 +14,7 @@ function print (text) {
 function isValid(m) {
     if (m === '') {
      return false;
-    } else if (m.length < 4){
+    } else if (m.length < 5){
      return false;
     } else if (m.includes(' ')){
      return false;
